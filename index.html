@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>SmartPE Website
+   <style>
+#splash1 {
+     color: #FFFF00;
+     font-size: 1.5em;
+     font-family:'minecraftfont';
+     text-shadow:3px 3px #3F3F00;
+     padding: 40px;
+     position: absolute;
+}
+.pop {
+   animation: pop 0.58s infinite;
+   -webkit-animation: pop 0.58 infinite;
+}
+@keyframes pop {
+   from {
+     transform:scale(0.95)
+   }
+   50% {
+     transform:scale(1)
+   }
+   to {
+     transform:scale(0.95)
+   }
+}
+@-webkit-keyframes pop {
+   from {
+     -webkit-transform:scale(0.95)
+   }
+   50% {
+     -webkit-transform:scale(1)
+   }
+   to {
+     -webkit-transform:scale(0.95)
+   }
+}
+.tilt {
+   -ms-transform: rotate(-25deg);
+   -webkit-transform: rotate(-25deg);
+   transform: rotate(-25deg);
+}
+@font-face {
+   font-family:'minecraftfont';
+   src: url('volter.ttf');
+}
+   </style>
+  </head>
+
+  <body>
+    <div class="tilt">
+      <div id="splash1" class="pop">Splash</div>
+    </div>
+  </body>
+</html>
