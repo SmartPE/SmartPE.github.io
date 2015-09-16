@@ -1,0 +1,26 @@
+@font-face {
+  font-family:volter;
+  src: url('fonts/volter.ttf');
+}
+@font-face {
+  font-family:mcpe;
+  src: url('fonts/mcpe.ttf');
+}
+
+body {
+  font-family:volter;
+  background:url(img/bg.png);
+}
+
+th {
+  background:url(img/bg3.png);
+}
+
+#mc {
+  font-family:mcpe;
+}
+
+#bod {
+  background-color:rgb(153,153,153);
+  color:gray!
+}
