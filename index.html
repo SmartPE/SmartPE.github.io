@@ -1,16 +1,9 @@
 <!DOCTYPE html>
   <html lang="es">
     <head>
-
-
-
-
-
-
-
-      <title>SmartPE Website</title>
-      <link rel="StyleSheet" href="CSS/styles.css" type="text/css">
+      <title>SmartPE</title>
     <style>
+	  
 @font-face {
   font-family:volter;
   src: url('fonts/volter.ttf');
@@ -19,68 +12,94 @@
   font-family:mcpe;
   src: url('fonts/mcpe.ttf');
 }
-
 body {
-  font-family:volter;
-  background:url(img/bg.png);
+		background-image: url(img/bg.png);
+		font-family:'volter';
+		text-shadow:3px 3px #3F3F33;
 }
-
-th {
-  background:url(img/bg3.png);
+div.title {
+  text-align: center;
 }
-
+#bod {
+		background-image: url(img/bg2.png);
+		width:100%;
+		height:500px;
+		color:#fff;
+}
+#pbg {
+	 	background-image: url(img/bg2.png);
+}
 #mc {
   font-family:mcpe;
 }
-
-#bod {
-  background-color:rgb(153,153,153);
-  color:gray!
+/* De registro unicamente */
+#boton {
+		background-color: rgb(149,134,129);
+		color:#FFFFFF;
+		height:30px;
+		font-family:'volter';
+		text-shadow:1.5px 1.5px #3F3F33;
+}
+#boton:hover{
+		background-color: rgb(115,101,99);
+		color: rgb(255,255,164);
+}
+#boton:active {
+		background-color: rgb(115,101,99);
+		color: rgb(255,255,164);
+}
+#entrada {
+		border:solid rbg(107,97,99);
+		background-color: rgb(58,53,49);
+		font-family:'volter';
+		color:#fff;
+		height:30px;
+		text-shadow:2px 2px #3F3F33;
+}
+#chb {
+		font-size:8px;
+		text-shadow:1.4px 1.3px #3F3F33;
+}
+#lel {
+ 		font-size:10px;
+		text-shadow:1.1px 1.1px #3F3F33;
+		color: rgb(255,255,164);
 }
 	</style>
 	</head>
 
   <body>
 
-  <table height=50 width=100% border=5>
-	<tr>
-	  <th id=mc><h1>SMARTPE</h1></th></tr>
+   <table height=50 width=100% border=0>
+  	<br><br>
+	 <div class="title">
+      <img src="img/title.png" alt="title" align="middle">
+    </div>
   </table>
   
-  <table height=30px width=100% border=3>
+<table height=30px width=100% border=0>
 	<tr>
-	  <th border=3><a href="Index.html"> Pagina 1</th>
-	  <th border=3><a href="#Pagina2">Pagina 2</th>
-	  <th border=3><a href="twitter.html">Acerca de</a></th>
+	 <div class="title">
+	  <input id=boton type="submit" onclick="location.href='index.html';" value="Inicio"/>
+	  <input id=boton type="submit" onclick="location.href='descargas.html';" value="Descargas"/>
+	  <input id=boton type="submit" onclick="location.href='about.html';" value="Acerca de SmartPE"/>
+	  <input id=boton type="submit" onclick="location.href='indexmob.html';" value="Versión de Movil"/>
+	  <input id=boton type="submit" onclick="location.href='registro.html';" value="Registrarse"/>
+	  <input id=boton type="submit" onclick="location.href='sesion.html';" value="Iniciar Sesión"/>
+	 </div>
 	</tr>
   </table>
   
-
-
- <table id=bod width=10% height=5px border=3px>
-	<tr>
-
-<div>
-
- <th border=2><a href="IndexMovil.html">Modo Telefono</a></th>
-	
-
-
-
-
-
-
   <table height=20px>
 	<tr>
   </table>
   
-  <table id=bod width=100% height=200px border=5px>
+  <table id=bod border=5px>
 	<tr>
 	  <td border=5>Hola!
 		<br>
 		<br>Este es el sitio oficial de SmartPE, un grupo de modders de Minecraft PE
 		<br>Nosotros trabajamos con ModPE Scripts
-		
 	  </td>
 	</tr>
   </table>
