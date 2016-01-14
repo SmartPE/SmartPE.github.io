@@ -1,12 +1,62 @@
 <!DOCTYPE html>
   <html lang="es">
-    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.1"/>
-  <link rel="ICON" href="img/icon.ico" type="image/ico" />
-      <title>SmartPE</title>
+    <head> 
+	<meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.9"/>
+	</head>      <title>SmartPE</title>
       <link rel="StyleSheet" href="CSS/styles.css" type="text/css">
-      <style>
+	  <header class="codrops-header">
+		<nav class="codrops-demos">
+		</nav>
+		  <div class="img"> 
+			<img align=middle src="img/title.png" 
+			  alt="Img" width="380" height="85"></a> 
+	
+		 
+		  
+ <style>
+#splash1 {
+     color: #FFFF00;
+     font-size: 1.5em;
+     font-family:'volter';
+     text-shadow:3px 3px #3F3F33;
+     padding: 40px;
+     position: absolute;
+}
+.pop {
+   animation: pop 0.58s infinite;
+   -webkit-animation: pop 0.58 infinite;
+}
+@keyframes pop {
+   from {
+     transform:scale(0.95)
+   }
+   50% {
+     transform:scale(1)
+   }
+   to {
+     transform:scale(0.95)
+   }
+}
+@-webkit-keyframes pop {
+   from {
+     -webkit-transform:scale(0.95)
+   }
+   50% {
+     -webkit-transform:scale(1)
+   }
+   to {
+     -webkit-transform:scale(0.95)
+   }
+}
+.tilt {
+   -ms-transform: rotate(-25deg);
+   -webkit-transform: rotate(-25deg);
+   transform: rotate(-25deg);
+}
+
     
 @font-face {
   font-family:volter;
@@ -57,7 +107,7 @@ div.title {
     background-color: rgb(58,53,49);
     font-family:'volter';
     color:#fff;
-    height:30px;
+    height:20px;
     text-shadow:2px 2px #3F3F33;
 }
 #chb {
@@ -70,43 +120,52 @@ div.title {
     color: rgb(255,255,164);
 }
   </style>
-  </head>
+		  
 
-  <body>
-
-   <table height=50 width=100% border=0>
-    <br><br>
-   <div class="title">
-      <img src="img/title.png" alt="title" align="middle">
-    </div>
-  </table>
   
-<table height=30px width=100% border=0>
+
+	<table height=10 width=1% border=0>
+    <br><br>
+  
+	
+
+ 
+	 <table height=3px width=10% border=0>
   <tr>
-   <div class="title">
-    <input id=boton type="submit" onclick="location.href='indexmob.html';" value="Inicio"/>
-    <input id=boton type="submit" onclick="location.href='descargasmob.html';" value="Descargas"/>
-    <input id=boton type="submit" onclick="location.href='aboutmob.html';" value="Acerca de SmartPE"/>
-    <input id=boton type="submit" onclick="location.href='index.html';" value="Versión de PC"/>
-    <input id=boton type="submit" onclick="location.href='registromob.html';" value="Registrarse"/>
-    <input id=boton type="submit" onclick="location.href='sesionmob.html';" value="Iniciar Sesión"/>
-   </div>
+  <!--Font size really is used to change the space into these buttons-->
+<div style="font-size:5%" class="title">
+  <input id=boton type="submit" onclick="location.href='index.html';"value="Inicio"/>
+   <input id=boton type="submit" onclick="location.href='indexbig.html';" value="PC"/> -->
+ <!--   <input id=boton type="submit" onclick="location.href='index.html';" value="Versión de PC"/> -->
+   <input id=boton type="submit" onclick="location.href='registromob.html';" value="Registrarse"/> 
+ <!--  <input id=boton type="submit" onclick="location.href='sesionmob.html';" value="Iniciar Sesión"/> -->
+ <input id=boton type="submit" onclick="location.href='about.html';" value="Acerca de"/>
+
+  </div>
   </tr>
   </table>
-  
-  <table height=20px>
+	
+  <div class="center">
+  <table height=3px>
   <tr>
   </table>
-  
-  <table id=bod border=5px>
+ 
+  <table id=bod border=2px>
   <tr>
+<div class="title">
     <td border=5>Hola!
     <br>
     <br>Este es el sitio oficial de SmartPE, un grupo de modders de Minecraft PE
     <br>Nosotros trabajamos con ModPE Scripts
     </td>
-  </tr>
+</div>  <tr>
   </table>
   
+
+
+
+
+
   </body>
 </html>
+    
