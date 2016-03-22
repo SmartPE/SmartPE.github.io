@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+<!-- <script src="js/sound.js"></script> -->
 	<title>SmartPE</title>  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<meta name="theme-color" content="#958681">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<link rel="ICON" href="img/icon.ico" type="image/ico" />
 <link rel="StyleSheet" href="CSS/Splash.css" type="text/css">
 
-<!--  <script type="text/javaScript">
-var frases = new Array('Frase 1','Frase 2','Frase 3','Frase 4','Frase 5','Frase 6');
-function cambiaFrase(){
-document.getElementById('frase').innerHTML=frases[parseInt(Math.random() * frases.length)]; 
-}
-</script> 
-	  -->
+ 
+<!-- <bgsound id="sound">
+ <script
+
+function playSound() {
+document.all.sound.src = "click.ogg"
+	  </script> -->
 	  <style>
+		summary.outset {border-style: outset;}
+	details:hover{
+		color: #cec642;	
+		
+}	
+		
+		
+	summary:hover{
+		background-color: rgb(115,101,99);
+		color: color: #cec642;	
+		
+}
+a.outset {border-style: outset;}
+
+
+h3.dotted {border-style: dotted;}
+h3.dashed {border-style: dashed;}
+h3.solid {border-style: solid;}
+h3.double {border-style: double;}
+h3.groove {border-style: groove;}
+h3.ridge {border-style: ridge;}
+h3.inset {border-style: inset;}
+h3.outset {border-style: outset;}
+h3.hidden {border-style: hidden;}	
+		
 
 	     h3
      {
@@ -22,21 +48,31 @@ document.getElementById('frase').innerHTML=frases[parseInt(Math.random() * frase
             height: 60px;
             padding: 26px;
             background-color: #958681;
-            box-shadow: 8px 8px #44423e;
-         }       input
+        /*    box-shadow: 8px 8px #44423e; */
+       border-color: #B1B1B1;
+		}  
+		 
+		 input
      {
-            width: 70px;
+            width: 90px;
             height: 8px;
             padding: 10px;
             background-color: #958681;
-            box-shadow: 6px 6px #44423e;
-         }       summary
+/*            box-shadow: 6px 6px #44423e; */
+               border-color: #B1B1B1;
+         }      
+		 
+		 
+		 summary
      {
             width: 88px;
             height: 8px;
             padding: 8px;
             background-color: #958681;
-            box-shadow: 6px 6px #44423e;
+        /*    box-shadow: 3px 3px #44423e; */
+		border-color: #B1B1B1;
+			color: #fff;
+			summary.outset {border-style: outset;}
          }       
 @font-face {
   font-family:volter;
@@ -49,7 +85,7 @@ document.getElementById('frase').innerHTML=frases[parseInt(Math.random() * frase
 body {
 		background-image: url(img/bg.png);
 		font-family:'volter';
-		text-shadow:3px 3px #3F3F33;
+		text-shadow:1.5px 1.5px #3F3F33;
 }
 div.title {
   text-align: center;
@@ -76,11 +112,11 @@ div.title {
 }
 #boton:hover{
 		background-color: rgb(115,101,99);
-		color: rgb(255,255,164);
+		color: color: #cec642;
 }
 #boton:active {
 		background-color: rgb(115,101,99);
-		color: rgb(255,255,164);
+		color: #cec642;
 }
 #entrada {
 		border:solid rbg(107,97,99);
@@ -91,14 +127,21 @@ div.title {
 		text-shadow:2px 2px #3F3F33;
 }
 #chb {
-		font-size:3px;
+		font-size:1px;
 		text-shadow:1.4px 1.3px #3F3F33; 
+		
 }
 #lel {
  		font-size:5px;
 		text-shadow:1.1px 1.1px #3F3F33;
-	    color: rgb(255,255,164); 
+	    color: #cec642
 }
+/*unSelectable text */
+
+
+
+-webkit-user-select: none; /* Chrome/Safari */ -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* IE10+ */ /* Rules below not implemented in browsers yet */ -o-user-select: none; user-select: none;
+
 </style>
   </head>
 
@@ -113,7 +156,7 @@ div.title {
 		<div  class="title"> 
 		<!--   <input id=boton type="submit" onclick="location.href='mai.html';" value="Inicio"/> -->
 		  <!--  <input style="font-size:10%"  id=boton type="submit" onclick="location.href='descargas.html';" value="Descargas"/> -->
-		 <input style="font-size:10%"   id=boton type="submit" onclick="location.href='aboutMob.html';" value="Acerca de"/>
+		 <input unselectable="on"  style="font-size:10%"   id=boton type="submit" onClick="'playSound()'"; value="Acerca de"/>
 		  <input  style="font-size:10%"  id=boton type="submit" onclick="location.href='index.html';" value="Versión PC"/>
 		  <!--   <input style="font-size:10%"  id=boton type="submit" onclick="location.href='#registro.html';" value="Registrarse"/>
 		  <input style="font-size:10%"  id=boton type="submit" onclick="location.href='#sesion.html';" value="Iniciar Sesión"/> -->
@@ -135,8 +178,22 @@ div.title {
 		  </td>
 		</tr> </table> -->
 	<center style="font-size:40%" >
-	  <h3   style="color:white">Hola! <br> <br> Este es el sitio oficial de SmartPE,un grupo de modders de Minecraft PE <br> <br>Nosotros trabajamos con ModPE Scripts</div>
+	  <h3 class="outset"  style="color:white">Hola! <br> <br> Este es el sitio oficial de SmartPE,un grupo de modders de Minecraft PE <br> <br>Nosotros trabajamos con ModPE Scripts</div>
 	  </h3>   </center>
    <br> <br> <div> 
-	 <!-- <input style="font-size:10%"  id=boton type="submit" onclick="location.href='ENindex.html';" value="English"/>  </div><center> <details  style="font-size:20%"> <summary style="color:white">Idiomas</summary> <br><br> <input style="font-size:10%"  id=boton type="submit" onclick="location.href='ENindex.html';" value="English"/> <br> <br> <br> <input style="font-size:10%"  id=boton type="submit" onclick="location.href='index.html';" value="Español"/> </p> </details> -->
+	<!--   <input style="font-size:10%"  id=boton type="submit" onclick="location.href='ENindex.html';" value="English"/>  </div><center> <details  style="font-size:20%"> <summary>Idiomas</summary> <br><br> <input style="font-size:10%"  id=boton type="submit" onclick="location.href='ENindex.html';" value="English"/> <br> <br> <br> <input style="font-size:10%"  id=boton type="submit" onclick="location.href='index.html';" value="Español"/> </p> </details> --> 
+
+<!--
+
+<p align="left">
+<a href="http://www.codingforums.com" onmouseover="mouseoversound.playclip()">Coding Forums</a></p>
+
+<p align="left"><b>Click</b> on the following links to hear a sound effect:</p>
+<p align="left">
+<a href="#current" onclick="clicksound.playclip()">Link 1</a>
+<a href="#current" onclick="clicksound.playclip()">Link 2</a>
+<a href="#current" onclick="clicksound.playclip()">Link 3</a></p>
+
+-->
+
 </html>
